@@ -59,6 +59,7 @@ function verify() {
             }else{
                 //Ancestor
                 img.setAttribute('src', '../images/ancestor.jpg')
+                document.writeln('You are already bones')
             }
         }
     }
