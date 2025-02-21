@@ -17,7 +17,7 @@
 }
 
 body {
-    background-color: rgb(107, 107, 241);
+    background-color: #6b6bf1;
     color: white;
     font: normal 15pt var(--super-squad);
 }
@@ -35,6 +35,30 @@ section{
 div{
     text-align: center;
     padding: 5px;
+}
+#submit{
+    
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: #6b6bf1;
+    color: white;
+    border: none;
+    font-size: large;
+    font-family: var(--super-squad);
+}
+#submit:hover{
+    background-color:white;
+    color: #6b6bf1;
+    transition-duration: 1.5s;
+}
+#year{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-style: double;
+    border-radius: 10px;
+    border: 2px solid black;
 }
 img{
     border-radius: 50%;

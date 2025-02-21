@@ -3,6 +3,7 @@ function verify() {
     var year = date.getFullYear()
     var fyear = document.querySelector('input#year')
     var reply = document.querySelector('div#reply')
+    var fun = document.querySelector('div.fun')
     
     if(fyear.value.length == 0 || Number(fyear.value) > year){
         alert('Verify the data and try again!')
@@ -35,6 +36,7 @@ function verify() {
             }else{
                 //Ancestor
                 img.setAttribute('src', '../images/ancestor.jpg')
+                fun.innerHTML = 'You are already bones'
             }
         }else if(fgender[1].checked){
             gender = 'woman'
@@ -59,10 +61,10 @@ function verify() {
             }else{
                 //Ancestor
                 img.setAttribute('src', '../images/ancestor.jpg')
-                document.writeln('You are already bones')
-            }
+                fun.innerHTML = 'You are already bones'
         }
     }
     reply.innerHTML = `You are a ${gender} with ${age} years!`
     reply.appendChild(img)
+}
 }
